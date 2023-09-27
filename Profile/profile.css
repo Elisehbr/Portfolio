@@ -1,0 +1,74 @@
+#profile{
+    color:rgba(39, 47, 90, 0.53);
+}
+#profile-overskrift{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 100px;
+    margin-left: 70px;
+    margin-top: 200px;
+    width: 800px;
+}
+#text1-container{
+    width: 800px;
+    margin-left: 130px;
+    padding: 20px;
+}
+#text1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+}
+#bilde-meg{
+    background-image: url(bilde.jpeg);
+    background-size:contain;
+    background-position: center;
+    height: 1000px; 
+    width: 100%;
+}
+.dot-container{
+    height: 850px;
+    width: 100%;
+}
+#dot1{
+    position: absolute;
+    top: 1500px;
+    left: 700px;        
+    width: 800px;
+    height: 600px; /* Adjust this to the desired height */
+    z-index: -1;
+    background-image: url("../Bilderfelles/rec2.png");
+    background-size: cover;
+    background-position: center;
+}
+#dot2{
+    position: absolute;
+    top: 2000px;
+    left: -200px;        
+    width: 800px;
+    height: 600px; /* Adjust this to the desired height */
+    z-index: -1;
+    background-image: url("../Bilderfelles/rec2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.text2-container{
+    padding: 30px;
+    width: 900px;
+    margin: auto;
+    margin-top:100px;
+    z-index: 100px;
+}
+
+#text2{
+    padding: 20px;
+    line-height: 30px;
+    font-family: 'Inter', sans-serif;
+}
+#ferdigheter{
+    background-color: #CCCBC4;
+    width: 800px;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 200px;
+    border-radius: 12px;
+}

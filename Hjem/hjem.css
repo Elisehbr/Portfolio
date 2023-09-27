@@ -1,0 +1,121 @@
+body{
+  margin: 0;
+  padding: 0;
+  max-height: 100vh; /* 100% av visningshøyden */
+  overflow-x: hidden;
+}
+#hjem{
+  color:rgba(39, 47, 90, 0.53);
+}
+  .velkommen{
+    margin-top: 300px;
+    width: 1200px;
+    margin-left: 80px;
+  }
+
+
+  #vel{
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+  
+  #info p{
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    line-height: 70px;
+  }
+
+  #rectangle {
+    position: absolute;
+    top: 120px;
+    left: 600px;
+    width: 800px;
+    height: 600px; /* Adjust this to the desired height */
+    z-index: -1;
+    background-image: url("../Bilderfelles/rec2.png");
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+  }
+
+  #highlights{
+    margin-top: 300px;
+    margin-left: 100px;
+    width: 500px;
+  }
+
+  #highlights h4{
+    margin-left: 30px;
+    font-size: 16px;
+  }
+
+  .bilder{
+    width: 200px;
+  }
+
+  .aar{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+  }
+
+  .prosjekter{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+    padding: 50px;
+    overflow-x: auto;
+  }
+
+  .prosjekter a{
+    color: black;
+    text-decoration: none;
+    padding-top: 300px;
+  }
+
+  .boks:hover{
+    transform: translateY(-15px);
+  }
+  .boks{
+    display: flex;
+    padding: 50px;
+    width: 290px;
+    height: 400px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  #boks1{
+    background-color:#C6C5BC;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  #boks2{
+    background-color: #353535;
+    color: white;
+  }
+  #boks2 p, #boks2 h2, #boks4 p, #boks4 h2{
+    color: white;
+  }
+  
+  
+  #boks3{
+    background-color: #7D7770;
+    color: white;
+  }
+  #boks4{
+    background-color:#2F3551;
+  }
+
+  #veske{
+    position: absolute;
+    width: 300px;
+    top: 50px;
+  }
+
+
+  

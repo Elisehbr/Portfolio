@@ -1,0 +1,94 @@
+
+#ardu-logo img{
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+    width: 500px;
+}
+
+.intro{
+    font-size: 20px;
+    line-height: 50px;
+    width: 80%;
+    padding: 50px;
+    margin-left: auto;
+    font-style: italic;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    align-items: center;
+    margin: auto;
+}
+.textboks{
+    padding: 30px;
+    line-height: 30px;
+    background-color: #DBDDE1;
+    border-radius: 12px;
+    margin: 30px;
+}
+
+.bilde img{
+    padding: 30px;
+    border-radius: 12px;
+    width: 700px;
+}
+
+
+.container2 img{
+    width: 1300px;
+    padding: 30px;
+    
+}
+#bildegrid img{
+    width: 600px;
+}
+
+#recoransj1{
+    position: absolute;
+    width: 800px;
+    top: 600px;
+    left: 650px;
+    z-index: -1;
+}
+
+.bilder{
+    width: 90%;
+    margin: auto;
+}
+.bilder img{
+    width: 100%;
+    padding: 30px;
+}
+
+.text3{
+    background-color: #DBDDE1;
+    color:black;
+    padding: 50px;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    line-height: 30px;
+}
+.text2{
+    background-color: #DBDDE1;
+    color:black;
+    padding: 50px;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+
+#recoransj2{
+    position: absolute;
+    width: 800px;
+    top: 2800px;
+    left: 650px;
+    z-index: -1;
+}

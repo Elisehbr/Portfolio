@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portofølje</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="thevintagebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <img id="logo" src="../Bilderfelles/logony.png" alt=""> 
+        </div>
+        <div class="linker">
+          <a href="../Hjem/index.html">Home</a>
+          <a id="sihei" href="../Profile/profile.html">Profile</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <img id="vintage" src="logony.png" alt="">
+      </div>
+      <div class="text-container"> 
+        <p>
+            I 2019 fikk vi et prosjekt av en av mine favorittlærere på videregående om å lage en nettside, jeg ønsket dermed å teste megselv litt og se hvor mye jeg klarte utifra det vi hadde lært. Dette endte opp i the vintage store som skulle være et bedre alternativ til å handle vintage enn det som fantes. 
+        </p>
+        <a id="web" href="../TheVintageStoreWEB/Hjem/index.html">Klikk her for å se nettstedet!</a>
+        <hr>
+      </div>
+
+     <img id="recgronn" src="recgronn.png" alt="">
+
+     <img id="forside" src="forside.png" alt="">
+      
+      <div class="bilde-container">
+        <img id="bilde1" src="element1.png" alt="">
+        <img id="bilde2" src="element2.png" alt="">
+      </div>
+
+      <img id="recgronn2" src="recgronn.png" alt="">
+      
+    </main>
+    <footer>
+      <hr>
+      <section class="foot">
+        <div id="NO">
+          <p>Made in Norway</p>
+        </div>
+        <div id="kontaktinfo">
+          <a href="instagram.com">Instagram</a>
+          <a href="linkedin.com">LinkedIn</a>
+          <a href="Email">Email</a>
+        </div>
+       
+        
+      </section>
+    </footer>
+
+</body>
+<script>
+
+  const gridContainer = document.querySelector('.prosjekter');
+  let startX;
+  let scrollLeft;
+
+  gridContainer.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 1) {
+      startX = e.touches[0].pageX - gridContainer.offsetLeft;
+      scrollLeft = gridContainer.scrollLeft;
+    }
+  });
+
+  gridContainer.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 1 && startX !== undefined) {
+      e.preventDefault();
+      const x = e.touches[0].pageX - gridContainer.offsetLeft;
+      const walk = (x - startX) * 2; // Adjust this multiplier for smoother scrolling
+      gridContainer.scrollLeft = scrollLeft - walk;
+    }
+  });
+
+  gridContainer.addEventListener('touchend', () => {
+    startX = undefined;
+  });
+</script>
+
+<script>
+const navbar = document.querySelector('.navbar');
+const scrollThreshold = 100; // Angi terskel for når grensen skal vises
+
+function toggleNavbarBorder() {
+  if (window.scrollY > scrollThreshold) {
+    navbar.classList.add('navbar-scrolled');
+  } else {
+    navbar.classList.remove('navbar-scrolled');
+  }
+}
+
+// Lytt etter skrollehendelser og oppdater grensen
+window.addEventListener('scroll', toggleNavbarBorder);
+</script>
+  
+    
+</html>

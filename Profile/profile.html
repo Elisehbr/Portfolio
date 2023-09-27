@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portofølje</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="../java.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <img id="logo" src="../Bilderfelles/logony.png" alt=""> 
+        </div>
+        
+        <div class="linker">
+          <a href="../Hjem/index.html">Hjem</a>
+          <a id="profile" href="profile.html">Profil</a>
+        </div>
+        
+      </nav>
+    </header>
+    <main>
+        <div>
+            <p id="profile-overskrift">Profil</p>
+        </div>
+        <div id="text1-container" >
+          <p id="text1">
+            ELISE BRODAHL, en jente med lidenskap for teknologi, design og mennesker.
+          </p>
+        </div>
+        <div id="bilde-meg">
+            
+        </div>
+        <div class="dot-container">
+          <div id="dot1">
+          </div>
+          <div id="dot2">
+          </div>
+          <div class="text2-container">
+            <h2>
+              Om meg
+            </h2>
+            <p id="text2">
+              Jeg er en 21 år gammel jente som for øyeblikket går bacheloren "Informatikk: design, bruk og interaksjon" på Universitetet i Oslo. Jeg har en lidenskap for teknologi og design og mye av tiden min går til studier og hobbyprosjekter rundt dette. På fritiden har jeg også andre interesser som å lage mat, lese bøker og gå turer rundt om i byen. Jeg er også utrolig glad i å være rundt venner, men også det å møte nye mennesker. Jeg elsker å holde middagsselskaper og invitere ulike venner for hyggelige kvelder med mat og drikke!
+            </p>
+            <p id="text2">
+              Min interesse for it og design startet i andreklasse på videregående da vi skulle velge valgfag. Jeg har alltid vært interessert men har aldri hatt muligheten eller ferdighetene til å utforske det mer. Dermed valgte jeg IT-1 som fag og endte med å få en superengasjert og flink lærer som var tålmodig og ivrig. Han lærte oss både HTML, CSS og noe JAVASCRIPT og jeg vil si den kjærligheten og interessen jeg har for teknologi i dag kommer hovedsakelig fra han. Han viste oss alle mulighetene med det og lærte oss alt han kunne. 
+            </p>
+            <p id="text2">
+              For fremtiden er jeg nysgjerrig på hva arbeidslivet bringer. Jeg er en sosial og utadvendt person og trives nok dermed best i team, selv om jeg også kan jobbe selvstendig. Jeg ivrer etter å lære mer og vet av erfaring at man lærer utrolig mye av de andre i teamet for å komme frem til de beste løsningene. Jeg er på utkikk etter en sommerjobb/deltidsstilling som UX-designer eller interaksjonsdesigner. Jeg er veldig åpen for å lære nye metoder og teknikker og er glad i utfordringer. 
+            </p>
+          </div>
+
+          
+        </div>
+        <div id="ferdigheter">
+          <h3>
+            Ferdigheter:
+          </h3>
+          <p  id="tekst2">Jeg kan litt ulike programmeringsspråk som JAVA, PYTHON, HTML, CSS og noe JAVASCRIPT. Vi har også tittet innom C++ i en gruppeoppgave på universitetet. Jeg har også vært mye borti figma og github, og er kjent med disse også.</p>
+        </div>
+      
+    </main>
+    <footer>
+      <hr>
+      <section class="foot">
+        <div id="NO">
+          <p>Made in Norway</p>
+        </div>
+        <div id="kontaktinfo">
+          <a href="instagram.com">Instagram</a>
+          <a href="linkedin.com">LinkedIn</a>
+          <a href="Email">Email</a>
+        </div>
+       
+        
+      </section>
+    </footer>
+
+  </body>
+  
+
+<script>
+  const navbar = document.querySelector('.navbar');
+  const scrollThreshold = 100; // Angi terskel for når grensen skal vises
+
+  function toggleNavbarBorder() {
+    if (window.scrollY > scrollThreshold) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  }
+
+  // Lytt etter skrollehendelser og oppdater grensen
+  window.addEventListener('scroll', toggleNavbarBorder);
+</script>
+  
+    
+</html>
